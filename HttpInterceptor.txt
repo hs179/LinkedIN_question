@@ -1,0 +1,26 @@
+Interceptor = Catch request → Clone request → Add changes → Pass request forward
+
+Think:
+
+"I C C P"
+
+I → Implement HttpInterceptor
+C → Catch request in intercept(req, next)
+C → Clone request (req.clone())
+P → Pass it (next.handle())
+
+
+export class AuthInterceptor implements HttpInterceptor {
+
+  intercept(req: HttpRequest<any>, next: HttpHandler) {
+
+    const newReq = req.clone({
+      setHeaders: {
+        Authorization: `Bearer token`
+      }
+    });
+
+    return next.handle(newReq);
+  }
+
+}

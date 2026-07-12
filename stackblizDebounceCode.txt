@@ -1,0 +1,65 @@
+import 'zone.js';
+import {Component, inject, Inject, OnInit} from '@angular/core';
+import {bootstrapApplication} from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { debounceTime, Subject } from 'rxjs';
+import { HttpClient, HttpClientJsonpModule, HttpClientModule } from '@angular/common/http';
+
+@Component({
+  selector: 'app-root',
+  imports:[CommonModule, FormsModule, HttpClientModule],
+  standalone: true,
+  template: `
+   <input type="text" (ngModelChange)="getValue(getvalue)" [(ngModel)]="getvalue">
+
+   <table border=1 style="margin-top:20px">
+   @for(data of filterData; track  data.id){
+    <tr >
+      <!-- <tr *ngFor="let data of filterData"> -->
+      <td>{{data.id}}</td>
+      <td>{{data.title}}</td>
+      <td>{{data.price}}</td>
+      <tr>
+   }
+   @empty{
+    <h4>No Record</h4>
+   }
+     
+     
+  </table>
+  `,
+})
+export class App implements OnInit {
+
+  name = 'Angular';
+  getvalue = ""
+  private $subject = new Subject();
+  private URL = "https://dummyjson.com/products/search?q=phone"
+  _http = inject(HttpClient)
+  showData:any;
+  filterData:any
+
+  ngOnInit() {
+    this._http.get(this.URL).subscribe((data:any) => {
+      this.showData = data.products
+      this.filterData = data.products
+      console.log("fetch data", this.showData)
+    })
+
+    this.$subject.pipe(debounceTime(100)).subscribe((subjectValue:any) => {
+      this.filterData= this.showData.filter((data:any) => data.title.toLowerCase().includes(subjectValue.toLowerCase()) )
+    })
+
+   
+}
+
+
+
+  getValue(value:string){
+    console.log("trigger")
+    this.$subject.next(value)
+  }
+}
+
+bootstrapApplication(App);

@@ -1,0 +1,329 @@
+================================================================================
+                     JAVASCRIPT PROJECT FILE DESCRIPTIONS
+================================================================================
+
+PROJECT: JavaScriptProgram
+CREATED: January 10, 2026
+UPDATED: February 12, 2026
+PURPOSE: A collection of JavaScript programs covering arrays, strings, numbers, 
+         and advanced JavaScript concepts for learning and interview prep.
+
+NAMING CONVENTION:
+Files are prefixed by category for easy navigation:
+  - Array_*     : Array manipulation and algorithms
+  - String_*    : String operations and transformations
+  - Number_*    : Number operations and mathematics
+  - Object_*    : Object operations and validations
+  - JS_*        : JavaScript advanced concepts and utilities
+
+================================================================================
+                              FILE LISTING
+================================================================================
+
+ARRAY OPERATIONS (16 files)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Array_Bubble_Sort.js
+   Description: Array sorting using bubble sort algorithm and built-in sort.
+   Topics: Arrays, Sorting, Algorithms
+
+2. Array_Chunk_By_Size.js
+   Description: Splits an array into smaller chunks of a specified size.
+   Topics: Arrays, Data Transformation
+
+3. Array_Count_Occurrence.js
+   Description: Counts occurrence of each element and returns frequency map.
+   Topics: Arrays, Counting, Objects
+
+4. Array_Filter_Exclude_By_ID.js
+   Description: Filters out elements from an array based on a list of IDs.
+   Topics: Arrays, Filtering
+
+5. Array_Filter_Unique_By_ID.js
+   Description: Keeps only unique objects in an array based on an ID property.
+   Topics: Arrays, De-duplication
+
+6. Array_Find_All_Indices.js
+   Description: Finds all index positions where a specific element appears.
+   Topics: Arrays, Searching
+
+7. Array_Find_Duplicates.js
+   Description: Finds duplicate and non-duplicate numbers in an array.
+   Topics: Arrays, Filtering
+
+8. Array_Find_Largest.js
+   Description: Finds the largest number using loop and reduce method.
+   Topics: Arrays, Max Value
+
+9. Array_Find_Min_Max.js
+   Description: Finds highest and lowest numbers in one iteration.
+   Topics: Arrays, Min/Max
+
+10. Array_Find_Missing_Number.js
+    Description: Finds the missing number in a sequence/array.
+    Topics: Arrays, Math
+
+11. Array_First_Non_Repeat_Element.js
+    Description: Identifies the first element in an array that does not repeat.
+    Topics: Arrays, Logic
+
+12. Array_Merge_Sorted.js
+    Description: Merges two arrays into single sorted array.
+    Topics: Arrays, Merging
+
+13. Array_Rotate_Left_Right.js
+    Description: Rotates array left or right by k positions.
+    Topics: Arrays, Algorithms
+
+14. Array_Second_Largest.js
+    Description: Finds second largest number without built-in sort.
+    Topics: Arrays, Algorithms
+
+15. Array_Sum_Nested.js
+    Description: Sums all numbers in nested arrays (flat and recursive).
+    Topics: Arrays, Recursion, Nesting
+
+16. Array_Two_Sum_Problem.js
+    Description: Finds two numbers that sum to target value.
+    Topics: Arrays, Searching, Algorithms
+
+17. Array_Union_Intersection.js
+    Description: Finds union and intersection of two arrays.
+    Topics: Arrays, Set Operations
+
+STRING OPERATIONS (11 files)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+18. String_Anagrams_Check.js
+    Description: Checks if two strings are anagrams.
+    Topics: Strings, Anagrams
+
+19. String_Balanced_Parentheses.js
+    Description: Validates balanced parentheses, brackets, and braces.
+    Topics: Strings, Stack, Algorithms
+
+20. String_Capitalize_Words.js
+    Description: Capitalizes first letter of each word.
+    Topics: Strings, Formatting
+
+21. String_Count_Character.js
+    Description: Counts occurrences of specific character in string.
+    Topics: Strings, Counting
+
+22. String_Find_Longest_Word_01.js
+    Description: Finds longest word in sentence (version 1).
+    Topics: Strings, Sorting
+
+23. String_Find_Longest_Word_02.js
+    Description: Finds longest word in sentence (version 2).
+    Topics: Strings, Sorting
+
+24. String_Longest_Word_03.js
+    Description: Finds longest word in string (version 3).
+    Topics: Strings, Sorting
+
+25. String_Palindrome_Check_01.js
+    Description: Checks if word is palindrome (version 1).
+    Topics: Strings, Logic
+
+26. String_Palindrome_Check_02.js
+    Description: Checks if string is palindrome (version 2).
+    Topics: Strings, Logic
+
+27. String_Reverse.js
+    Description: Reverses a string by iterating backwards.
+    Topics: Strings, Algorithms
+
+28. String_Rotation_Check.js
+    Description: Checks if one string is rotation of another.
+    Topics: Strings, Algorithms
+
+NUMBER OPERATIONS (4 files)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+29. Number_Armstrong_Check.js
+    Description: Checks if number is Armstrong (narcissistic number).
+    Topics: Numbers, Math
+
+30. Number_Fibonacci_Sequence.js
+    Description: Generates Fibonacci number at given position.
+    Topics: Numbers, Sequences
+
+31. Number_Sum_Digits_Single_01.js
+    Description: Sums digits until single digit (version 1).
+    Topics: Numbers, Loops
+
+32. Number_Sum_Digits_Single_02.js
+    Description: Sums digits until single digit (version 2).
+    Topics: Numbers, Loops
+
+OBJECT OPERATIONS (7 files)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+33. Object_Compare_Keys.js
+    Description: Compares if two objects have same keys (shallow).
+    Topics: Objects, Comparisons
+
+34. Object_Flatten_Keys_And_Values.js
+    Description: Flattens an object's keys and values into a simple structure.
+    Topics: Objects, Transformation
+
+35. Object_Flatten_Nested.js
+    Description: Flattens a deeply nested object into a single-level object.
+    Topics: Objects, Recursion
+
+36. Object_Flatten_Without_Parent_Keys.js
+    Description: Flattens objects while specific handling of parent keys.
+    Topics: Objects, Custom Logic
+
+37. Object_Is_Empty.js
+    Description: Checks if object is empty (no own properties).
+    Topics: Objects, Validation
+
+38. Object_Nested_Keys_Values.js
+    Description: Retrieves and manipulates values from nested objects.
+    Topics: Objects, Data Access
+
+39. Object_practice.js
+    Description: Practice file for various object-oriented concepts.
+    Topics: Objects, General Practice
+
+JAVASCRIPT ADVANCED CONCEPTS (11 files)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+40. JS_Advanced_Practice.js
+    Description: Practice lab for advanced JS features (Prototypes, etc).
+    Topics: JS Advanced
+
+41. JS_Async_Await_Practice.js
+    Description: Exercises covering Promises and Async/Await patterns.
+    Topics: Asynchronous JS
+
+42. JS_Call_Apply_Bind.js
+    Description: Demonstrates call(), apply(), and bind() methods.
+    Topics: JavaScript Fundamentals, this keyword
+
+43. JS_Closure_Counter.js
+    Description: Demonstrates closures with counter function.
+    Topics: JavaScript Advanced, Closures
+
+44. JS_Debounce_Function.js
+    Description: Implements debounce - delays function execution.
+    Topics: JavaScript Advanced, Performance Optimization
+
+45. JS_Higher_Order_Functions_Practice.js
+    Description: Practice specifically for map, filter, reduce and HOFs.
+    Topics: Functional Programming
+
+46. JS_Interview_Questions.js
+    Description: 100+ JavaScript interview questions with examples.
+    Topics: JavaScript Fundamentals, Interview Prep
+
+47. JS_Map_Filter_Reduce.js
+    Description: Examples of map(), filter(), and reduce() methods.
+    Topics: JavaScript Advanced, Functional Programming
+
+48. JS_Method_Chaining_Calculator.js
+    Description: Simple calculator implementation using method chaining.
+    Topics: Patterns, Logic
+
+49. JS_Method_Chaining_Questions.js
+    Description: Practice exercises for mastering method chaining.
+    Topics: Coding Patterns
+
+50. JS_Object_Array_Combined_Questions.js
+    Description: Complex interview questions involving both Objects and Arrays.
+    Topics: Data Structures, Logic
+
+51. JS_Throttle_Function.js
+    Description: Implements throttle - rate limiting function.
+    Topics: JavaScript Advanced, Performance Optimization
+
+DOCUMENTATION & PROJECT FILES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+52. JS_Missing_Topics_Roadmap.md
+    Description: Roadmap for remaining JS topics to master.
+    Topics: Documentation
+
+53. Senior_Interview_Prep_2026.md
+    Description: Specific prep guide for senior-level interviews.
+    Topics: Documentation, Interview Prep
+
+54. Practice.js
+    Description: General scratchpad for testing snippets.
+    Topics: Scratchpad
+
+================================================================================
+                           QUICK REFERENCE GUIDE
+================================================================================
+
+ARRAY FILES:
+  Array_Bubble_Sort.js              - Sorting algorithm
+  Array_Chunk_By_Size.js            - Array splitting
+  Array_Count_Occurrence.js         - Count element frequency
+  Array_Filter_Exclude_By_ID.js     - Exclude list of IDs
+  Array_Filter_Unique_By_ID.js      - Unique objects by ID
+  Array_Find_All_Indices.js         - Find all positions of element
+  Array_Find_Duplicates.js          - Extract duplicate elements
+  Array_Find_Largest.js             - Find max value
+  Array_Find_Min_Max.js             - Find min and max
+  Array_Find_Missing_Number.js      - Find gap in sequence
+  Array_First_Non_Repeat_Element.js - Find first unique element
+  Array_Merge_Sorted.js             - Merge and sort arrays
+  Array_Rotate_Left_Right.js        - Rotate array by k positions
+  Array_Second_Largest.js           - Find 2nd largest
+  Array_Sum_Nested.js               - Sum nested arrays
+  Array_Two_Sum_Problem.js          - Find two numbers with target sum
+  Array_Union_Intersection.js       - Union and intersection operations
+
+STRING FILES:
+  String_Anagrams_Check.js          - Check if strings are anagrams
+  String_Balanced_Parentheses.js    - Validate balanced brackets
+  String_Capitalize_Words.js        - Capitalize first letter per word
+  String_Count_Character.js         - Count specific character
+  String_Find_Longest_Word_01.js    - Find longest word (v1)
+  String_Find_Longest_Word_02.js    - Find longest word (v2)
+  String_Longest_Word_03.js         - Find longest word (v3)
+  String_Palindrome_Check_01.js     - Check palindrome (v1)
+  String_Palindrome_Check_02.js     - Check palindrome (v2)
+  String_Reverse.js                 - Reverse a string
+  String_Rotation_Check.js          - Check string rotation
+
+NUMBER FILES:
+  Number_Armstrong_Check.js         - Armstrong number validation
+  Number_Fibonacci_Sequence.js      - Fibonacci number generator
+  Number_Sum_Digits_Single_01.js    - Sum digits until single (v1)
+  Number_Sum_Digits_Single_02.js    - Sum digits until single (v2)
+
+OBJECT FILES:
+  Object_Compare_Keys.js            - Compare object keys
+  Object_Flatten_Keys_And_Values.js - Flatten keys/values
+  Object_Flatten_Nested.js          - Deep flatten object
+  Object_Flatten_Without_Parent_Keys.js - Custom flattening
+  Object_Is_Empty.js                - Check if object is empty
+  Object_Nested_Keys_Values.js      - Nested data access
+  Object_practice.js                - General object practice
+
+JAVASCRIPT ADVANCED:
+  JS_Advanced_Practice.js           - Prototype/Advanced lab
+  JS_Async_Await_Practice.js        - Promises/Async practice
+  JS_Call_Apply_Bind.js             - call(), apply(), bind() methods
+  JS_Closure_Counter.js             - Closure example with counter
+  JS_Debounce_Function.js           - Debounce implementation
+  JS_Higher_Order_Functions_Practice.js - map/filter/reduce lab
+  JS_Interview_Questions.js         - 100+ interview questions
+  JS_Map_Filter_Reduce.js           - Functional array methods
+  JS_Method_Chaining_Calculator.js  - Chaining patterns
+  JS_Method_Chaining_Questions.js   - Chaining practice
+  JS_Object_Array_Combined_Questions.js - Multi-structure logic
+  JS_Throttle_Function.js           - Throttle implementation
+
+DOCS & SCRATCH:
+  JS_Missing_Topics_Roadmap.md      - Learning path
+  Senior_Interview_Prep_2026.md     - Senior interview guide
+  Practice.js                       - Testing scratchpad
+
+================================================================================
+                               END OF DOCUMENT
+================================================================================
